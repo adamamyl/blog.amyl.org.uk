@@ -1,0 +1,70 @@
+markdown:           redcarpet
+pygments:           true
+#url:                http://blog.amyl.org.uk
+description:        my half-arsed attempt at blogging
+name:               adamblog
+title:              adamblog 
+disqus_shortname:   adamamyl
+
+# Owner/author information
+owner:
+  name:             adam
+  avatar:           avatar.jpg
+  bio:              "meh" 
+  email:            adam@amyl.org.uk 
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:          adamamyl
+  facebook:         
+  github:           adamamyl
+  stackexchange:    adamamyl
+  linkedin:         adammcgreggor
+  instagram:        
+  flickr:           adamamyl
+  tumblr:           adamamyl
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:   
+
+# Background image to be tiled on all pages
+background: 
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-19951302-2 
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title:          About
+    url:            /about/
+
+  - title:          Manifesto
+    url:            http://wibe.amyl.org.uk/
+    external:       true
+
+timezone:           Europe/London
+future:             true
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:          /:year/:month/:title/
+
+# Amount of post to show on home page
+paginate:           5
+
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  use_coderay:      true
+
+  coderay:
+    coderay_line_numbers:       nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width:          4
+    coderay_bold_every:         10
+    coderay_css:                class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
