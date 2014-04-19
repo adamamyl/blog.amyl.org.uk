@@ -11,33 +11,33 @@ owner:
   name:             adam
   avatar:           avatar.jpg
   bio:              meh
-  email:            adam@amyl.org.uk 
+  email:            adam@amyl.org.uk
   # Social networking links used in footer. Update and remove as you like.
   twitter:          adamamyl
-  facebook:         
+  facebook:
   github:           adamamyl
   stackexchange:    adamamyl
   linkedin:         uk/adammcgreggor
-  instagram:        
+  instagram:
   flickr:           adamamyl
   tumblr:           adamamyl
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:   
+  google_plus:
 
 # Background image to be tiled on all pages
 background: 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-19951302-2 
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Links to include in top navigation
 # For external links add external: true
 links:
   - title:          About
-    url:            /about
+    url:            /about/
 
   - title:          Manifesto
     url:            http://wibe.amyl.org.uk/
