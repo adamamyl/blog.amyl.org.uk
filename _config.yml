@@ -1,5 +1,5 @@
-markdown:           redcarpet
-pygments:           true
+markdown: kramdown
+pygments: true
 url:                http://blog.amyl.org.uk
 description:        my half-arsed attempt at blogging
 name:               adamblog
@@ -10,14 +10,14 @@ disqus_shortname:   adamamyl
 owner:
   name:             adam
   avatar:           avatar.jpg
-  bio:              "meh" 
+  bio:              meh
   email:            adam@amyl.org.uk 
   # Social networking links used in footer. Update and remove as you like.
   twitter:          adamamyl
   facebook:         
   github:           adamamyl
   stackexchange:    adamamyl
-  linkedin:         adammcgreggor
+  linkedin:         uk/adammcgreggor
   instagram:        
   flickr:           adamamyl
   tumblr:           adamamyl
@@ -37,7 +37,7 @@ bing_verify:
 # For external links add external: true
 links:
   - title:          About
-    url:            /about/
+    url:            /about
 
   - title:          Manifesto
     url:            http://wibe.amyl.org.uk/
