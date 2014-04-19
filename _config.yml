@@ -1,5 +1,5 @@
-markdown: kramdown
-pygments: true
+markdown:           kramdown
+pygments:           true
 url:                http://blog.amyl.org.uk
 description:        my half-arsed attempt at blogging
 name:               adamblog
