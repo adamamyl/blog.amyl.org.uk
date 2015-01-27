@@ -1,4 +1,4 @@
----
+
 title: Firefox Extensions
 author: adam
 layout: post
@@ -92,7 +92,7 @@ do
     grep "NS1:${K}" ${INFILE}  | sed -e "s/NS1:${K}=//" \
             -e 's/"//g' -e 's/>//' \
             -e 's/^[ \t]*//' | sort | uniq > ${OF}-${K}
-    # using wc here is entirely optional <img src='http://blog.amyl.org.uk/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />
+    # using wc here is entirely optional
     wc -l ${OF}-${K}
     # append
     cat ${OF}-${K} >> ${OUTFILE}

@@ -28,7 +28,7 @@ But, erm, yeah. I&#8217;ve made a start, and given how shit my memory is, I thou
 *   @adamamyl/music-folks &#8212; people in the music industry, in one way or another
 *   @adamamyl/technologists &#8212; people who fiddle with tech, new products, that sort of thing
 *   @adamamyl/mafia &#8212; people who (will) run things.
-*   @adamamyl/web-folks &#8212; people involved in web stuff and maybe social media, may include ruby people, as they&#8217;re not proper geeks <img src='http://blog.amyl.org.uk/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> 
+*   @adamamyl/web-folks &#8212; people involved in web stuff and maybe social media, may include ruby people, as they&#8217;re not proper geeks 
 *   @adamamyl/usual-suspects &#8212; child-eating, crack-dealing refusniks (hi Stef!) who still won&#8217;t give up.
 *   @adamamyl/politicos &#8212; those with political interests/aspirations. can also include current affairs/news
 *   @adamamyl/representatives &#8212; people who&#8217;ve been elected, usually

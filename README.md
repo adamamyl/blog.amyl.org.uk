@@ -1,4 +1,4 @@
-blog.amyl.org.uk
+adamamyl.org
 ================
 
 my blog

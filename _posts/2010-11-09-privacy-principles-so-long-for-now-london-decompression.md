@@ -10,7 +10,7 @@ categories:
   - principles
   - social
 ---
-Here&#8217;s what I&#8217;ve just sent to the London [Decompression][1] leads&#8217; list; sadly, sometimes we have to take a stand for what we believe in <img src='http://blog.amyl.org.uk/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> 
+Here&#8217;s what I&#8217;ve just sent to the London [Decompression][1] leads&#8217; list; sadly, sometimes we have to take a stand for what we believe in 
 
 > Following on from information about the proposed venue (&#8216;Cable&#8217;) for this year&#8217;s London Decompression, their insistence on using “Clubscan” and my principles, I feel I can no longer be involved, or participate in this year&#8217;s London Decompression event.
 > 
