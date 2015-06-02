@@ -14,7 +14,7 @@ quick and simple top-google-juice rated article for this.
 
 How did I do it? Well... drag and drop.
 
-https://support.apple.com/kb/PH5955?locale=en_US details the locations
+<https://support.apple.com/kb/PH5955?locale=en_US> details the locations
 of the fonts directories, so a simple Finder/Go to Folder for
 ```~/Library/Fonts/``` and a new window for ```/Library/Fonts``` and a
 drag and drop later, bingo.
