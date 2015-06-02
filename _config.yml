@@ -1,5 +1,5 @@
-markdown:           redcarpet
-pygments:           true
+markdown:           kramdown 
+highlighter:        pygments 
 url:                http://adamamyl.com
 description:        my half-arsed attempt at blogging
 name:               adamblog
