@@ -2,6 +2,7 @@
 title: Some notes on LetsEncrypt
 author: adam
 layout: post
+comments: true
 permalink: /2015/12/letsencrypt-part1/
 categories:
   - web
