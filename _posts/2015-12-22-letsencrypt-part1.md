@@ -30,7 +30,8 @@ You don't want to run into the [urllib3/OpenSSL issues](https://urllib3.readthed
 
 A `REQUIREMENTS` file might be useful (and even better, say, a `REQUIREMENTS.{debian,centos,freebsd,macos,ubuntu}` file).
 
-## Rate limits
+
+## Rate limits
 There [are rate limits](https://community.letsencrypt.org/t/rate-limits-for-lets-encrypt/6769).
 
 However, it seems that the documentation (and the recommended tool) doesn't deign to mention this. Nor does `letsencrypt-auto` default to using the staging infra (use `letsencrypt-auto --server https://acme-staging.api.letsencrypt.org/directory`)
@@ -58,39 +59,41 @@ This (lack of documentation, and left to fend for oneself), I think represents a
 
 At least there's not a Mailing list, as well as the forum, or worse, the mailing list (archive) being syndicated to seventeen different forums.
 
-## Apache
+
+## Apache
 In this case, I still use Apache. At some point, I'll be switching over to nginx, as I prefer nginx, and find it faster, but ho-hum. At time of writing, nginx support isn't as fully fledged as Apache, at least according to the docs (I have a hatred of forums).
 
 There are some gotchas to be aware of, that are loosely documented, but have atrocious error messages that are, quite plainly misleading.
 
-### Ports
+
+### Ports
 You may need to bind Apache to use an IPv4 address of your interface to get things working.
 
-	<IfModule ssl_module>
-        Listen 443
-	</IfModule>
+		<IfModule ssl_module>
+			Listen 443
+		</IfModule>
 
-	<IfModule mod_gnutls.c>
-        Listen 443
-	</IfModule>
+		<IfModule mod_gnutls.c>
+        	Listen 443
+		</IfModule>
 
-	<IfModule mod_ssl.c>
-		Listen 443
-	</IfModule>
+		<IfModule mod_ssl.c>
+			Listen 443
+		</IfModule>
 
 becomes
 
-	<IfModule ssl_module>
-        Listen 93.93.131.141:443
-	</IfModule>
+		<IfModule ssl_module>
+   	     	Listen 93.93.131.141:443
+   	    </IfModule>
 
-	<IfModule mod_gnutls.c>
-        Listen 93.93.131.141:443
-	</IfModule>
+		<IfModule mod_gnutls.c>
+        	Listen 93.93.131.141:443
+		</IfModule>
 
-	<IfModule mod_ssl.c>
-		Listen 127.0.0.1:443
-	</IfModule>
+		<IfModule mod_ssl.c>
+			Listen 127.0.0.1:443
+		</IfModule>
 
 (a plain `Listen 443` in `ports.conf` didn't help)
  
@@ -179,7 +182,7 @@ In testing, I wasn't too bothered, so did the LazyThing™ and issued and `rm -r
 
 It'd be nice if there were a curses interface for revocation.
 
-### No wildcard support (yet)
+### No wildcard support (yet)
  - but see below…
 
 ### Defining the 'master' certificate
