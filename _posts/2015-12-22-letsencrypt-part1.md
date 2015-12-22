@@ -1,3 +1,4 @@
+---
 title: Some notes on LetsEncrypt
 author: adam
 layout: post
@@ -11,9 +12,7 @@ categories:
   - letsencrypt
   - tech
   - technotes
-
-# LetsEncrypt
-
+---
 I've been playing with LetsEncrypt for a bit now, and on the whole, I like it. However, it's still early days, and I wanted to share my experiences.
 
 For the examples I use, I'm looking at my own set-up (or more precisely, NO2ID's, which I superintend/am Tech Director of) — I find real examples are useful.
