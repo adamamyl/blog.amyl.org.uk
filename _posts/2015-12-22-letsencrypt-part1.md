@@ -74,7 +74,7 @@ You may need to bind Apache to use an IPv4 address of your interface to get thin
 		</IfModule>
 
 		<IfModule mod_gnutls.c>
-        	Listen 443
+			Listen 443
 		</IfModule>
 
 		<IfModule mod_ssl.c>
@@ -84,11 +84,11 @@ You may need to bind Apache to use an IPv4 address of your interface to get thin
 becomes
 
 		<IfModule ssl_module>
-   	     	Listen 93.93.131.141:443
-   	    </IfModule>
+			Listen 93.93.131.141:443
+		</IfModule>
 
 		<IfModule mod_gnutls.c>
-        	Listen 93.93.131.141:443
+			Listen 93.93.131.141:443
 		</IfModule>
 
 		<IfModule mod_ssl.c>
@@ -135,10 +135,10 @@ In an ideal world, something like
 
 	<VirtualHost *:80>
 		ServerName foo.example.com
-		DocumentRoot /data/vhosts/foo.example.com
-		
-		Redirect	/foo	/baa
-		Redirect	/one	/two
+		[…]
+		Redirect		/foo	/baa
+		Redirect		/one	/two
+		Redirect		/join	http://www.no2id.net/get-involved/join
 		RewritePermanent	/baz	/downloads/baz
 	</VirtualHost>
 	
@@ -146,10 +146,10 @@ becoming
 
 	<VirtualHost *:443>
 		ServerName foo.example.com
-		DocumentRoot /data/vhosts/foo.example.com
-		
-		Redirect	/foo	/baa
-		Redirect	/one	/two
+		[…]		
+		Redirect		/foo	/baa
+		Redirect		/one	/two
+		Redirect		/join	https://www.no2id.net/get-involved/join
 		RewritePermanent	/baz	/downloads/baz
 	</VirtualHost>
 	
@@ -165,7 +165,7 @@ would be awesome.
 ## Gotchas
 
 ### Constant update
- - On every run. So annoying. I wish this would timestamp, and just check once an hour/day/week…
+On every run. So annoying. I wish this would timestamp, and just check once an hour/day/week…
  
 ### Revoking certificates
 There's very little documentation on this, and I didn't find it particularly useful / working.
@@ -183,10 +183,10 @@ In testing, I wasn't too bothered, so did the LazyThing™ and issued and `rm -r
 It'd be nice if there were a curses interface for revocation.
 
 ### No wildcard support (yet)
- - but see below…
+But see below…
 
 ### Defining the 'master' certificate
 Let's say you're mitigating against the wildcard lack-of-support; and you want to have various sites on the same cert; no problem, except you might want to use the root domain, not a subdomain as the main factor here; I found a two-step approach works here:
 
- - create using apex and www (e.g. `no2id.net` and `www.no2id.net`)
- - when that's done, re-run and extend the certificate to include others (`newsblog.wp.no2id.net`, `wp.no2id.net`, `pressreleases.wp.no2id.net`); but note, if you **don't want** punters to see you have a cert for `admin.no2id.net` don't include that; of course, security through obscurity is not especially useful; YMMV. Create an extra cert (but note ratelimit) for say dev and administrative things.
+ 1. Create using apex and www (e.g. `no2id.net` and `www.no2id.net`)
+ 1. When that's done, re-run and extend the certificate to include others (`newsblog.wp.no2id.net`, `wp.no2id.net`, `pressreleases.wp.no2id.net`); but note, if you **don't want** punters to see you have a cert for `admin.no2id.net` don't include that; of course, security through obscurity is not especially useful; YMMV. Create an extra cert (but note ratelimit) for say dev and administrative things.
